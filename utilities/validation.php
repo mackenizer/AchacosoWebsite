@@ -42,6 +42,28 @@ function validDate($value){
     return (preg_match('/([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))/',$value)) ? true : false;
 }
 
+function validate($value, $repassword = ""){
+    return isEmptyy($value) && checkSize($value) && passwordMatch($value, $repassword);
+}
+
+function isEmptyy($value){
+    return trim(strlen($value) > 0);
+}
+
+function checkSize($value){
+    $min = 3;
+    $max = 12;
+    return strlen($value) >= $min && strlen($value) <= $max;
+}
+
+function passwordMatch($value, $repassword){
+    return $value == $repassword;
+}
+
+function isValidPassword($value){
+    return preg_match_all('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/', $value);
+}
+
 
 
 

@@ -22,24 +22,33 @@
             <div class="card-body">
                 <form method="post" action="register.php" >
                     <div class="col-md-12 mb-2">
-                        <input type="text" name="firstname" class="form-control" placeholder="Firstname" required>
+                        <input type="text" name="username" class="form-control" placeholder="Username" required>
                     </div>
                     <div class="col-md-12 mb-2">
-                        <input type="text" name="lastname" class="form-control" placeholder="Lastname" required>
+                        <input type="password" name="password" class="form-control" placeholder="Password" required>
                     </div>
                     <div class="col-md-12 mb-2">
-                        <input type="text" name="middlename" class="form-control" placeholder="Middlename" required>
+                        <input type="password" name="repassword" class="form-control" placeholder="Retype Password" required>
                     </div>
                     <div class="col-md-12 mb-2">
-                        <input type="text" name="address" class="form-control" placeholder="Address" required>
+                        <input type="text" name="firstname" class="form-control" placeholder="Firstname">
+                    </div>
+                    <div class="col-md-12 mb-2">
+                        <input type="text" name="lastname" class="form-control" placeholder="Lastname">
+                    </div>
+                    <div class="col-md-12 mb-2">
+                        <input type="text" name="middlename" class="form-control" placeholder="Middlename">
+                    </div>
+                    <div class="col-md-12 mb-2">
+                        <input type="text" name="address" class="form-control" placeholder="Address">
                     </div>
                     <div class="col-md-12 mb-2">
                     Date of Birth:
-                        <input type="date" name="date" class="form-control" placeholder="Date" required>
+                        <input type="date" name="date" class="form-control" placeholder="Date">
                     </div>
                     <div class="col-md-12 mb-2">
                     Place of birth:
-                        <input type="text" name="place" class="form-control" placeholder="Address" required>
+                        <input type="text" name="place" class="form-control" placeholder="Address">
                     </div>
                     <div class="col-md-12 mb-2 custom-control custom-radio">
                         <input type="radio" name="gender"  aria-label="Radio button for following text input" checked>  Male</label>
@@ -48,14 +57,14 @@
                         <label><input type="radio" name="gender" aria-label="Radio button for following text input">  Female</label>
                     </div>
                     <div class="col-md-12 mb-2">
-                        <input type="text" name="guardian" class="form-control" placeholder="Guardian" required>
+                        <input type="text" name="guardian" class="form-control" placeholder="Guardian">
                     </div>
                     <div class="col-md-12 mb-2">
                     Contact Number:
-                        <input type="text" name="contact" class="form-control" placeholder="Contact Number" required>
+                        <input type="text" name="contact" class="form-control" placeholder="Contact Number">
                     </div>
                     <div class="col-md-12 mb-2">
-                        <input type="text" name="status" class="form-control" placeholder="Civil Status" required>
+                        <input type="text" name="status" class="form-control" placeholder="Civil Status">
                     </div>
                     <div class="col-md-12 mb-2">
                     <select class="custom-select" id="inputGroupSelect01" name="yearlvl">
@@ -91,18 +100,24 @@
                     </div>
                     <div class="col-md-12 mb-2">
                     School Year:
-                        <input type="text" name="schoolyear" class="form-control" placeholder="YYYY-YYYY" required>
+                        <input type="text" name="schoolyear" class="form-control" placeholder="YYYY-YYYY">
                     </div>
                     <div class="col-md-12 mb-2">
                     Email:
-                        <input type="email" name="email" class="form-control" placeholder="example@gmail.com" required>
+                        <input type="email" name="email" class="form-control" placeholder="example@gmail.com">
                     </div>
                     <div class="col-md-12">
                         <a href="register.php"><button type="submit" class="btn btn-secondary mb-1 form-control">
                             Submit
                         </button>
                         </a>
+                        <a href="includes/loginn.php" class="btn btn-secondary form-control">
+                            Go Back
+                        </a>
                     </div>
+                    
+                       
+                   
                     <div class="card-footer text-center" class="text-dark">
                              Copyright &copy; 2020
                     </div>

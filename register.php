@@ -46,6 +46,11 @@ $schoolyear = $_POST['schoolyear'];
 $email = $_POST['email'];
 //echo $email, "\n";
 
+$username = $_POST['username'];
+$password = $_POST['password'];
+$repassword = $_POST['repassword'];
+
+
 if(isEmpty($firstname) && isEmpty($lastname) && isEmpty($middlename) && isEmpty($place) && isEmpty($guardian) && isEmpty($contact) && isEmpty($status) && isEmpty($schoolyear)
  && isCorrectLentgh($firstname) && isCorrectLentgh($lastname)){
     echo "Inputs are good, <br>";
